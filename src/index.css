@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+
+.square-move-dot {
+    height: 1.5rem; /* Or any fixed size */
+    width: 1.5rem;
+    background-color: rgba(34, 197, 94, 0.5); /* Semi-transparent Green */
+    border-radius: 50%;
+}
