@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, doc, updateDoc, serverTimestamp } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAkuw6X3JWzn1zAxKnpo7he26PXJkrgAb4",
-  authDomain: "minimax-chess-lab.firebaseapp.com",
-  projectId: "minimax-chess-lab",
-  storageBucket: "minimax-chess-lab.firebasestorage.app",
-  messagingSenderId: "2693116443",
-  appId: "1:2693116443:web:306e1136b2fb71f920bebe",
-  measurementId: "G-LN3DZH3EG0"
+  apiKey:            import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain:        import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId:         import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket:     import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId:             import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId:     import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
